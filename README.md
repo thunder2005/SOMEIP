@@ -11,4 +11,4 @@ dofile(DATA_DIR.."vsomeip.lua")
 ```
 
 ### 运行效果截图
- ![运行效果截图](./img/demo1.png)
+ ![运行效果截图](./img/demo1.PNG)

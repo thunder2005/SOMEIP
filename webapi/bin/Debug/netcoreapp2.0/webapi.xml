@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webapi</name>
+    </assembly>
+    <members>
+        <member name="T:webapi.Controllers.ControllerGroupAttribute">
+            <summary>
+            Controller描述信息
+            </summary>
+        </member>
+        <member name="P:webapi.Controllers.ControllerGroupAttribute.GroupName">
+            <summary>
+            当前Controller所属模块 请用中文
+            </summary>
+        </member>
+        <member name="P:webapi.Controllers.ControllerGroupAttribute.Useage">
+            <summary>
+            当前controller用途    请用中文
+            </summary>
+        </member>
+        <member name="M:webapi.Controllers.ControllerGroupAttribute.#ctor(System.String,System.String)">
+            <summary>
+             Controller描述信息 构造
+            </summary>
+            <param name="groupName">模块名称</param>
+            <param name="useage">当前controller用途</param>
+        </member>
+        <member name="T:webapi.Controllers.SOMEIPController">
+            <summary>
+            用户控制器
+            </summary>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.GetCurrentChn">
+            <summary>
+            Get current radio channel info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.SetRadioChnInfo">
+            <summary>
+            SetRadioChnInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.GetNavigationStatusInfo">
+            <summary>
+            Get Navigation Status Info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.GetNavigationData">
+            <summary>
+            GetNavigationData
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.BluePhoneInfo_Call_State">
+            <summary>
+            GetNavigationData
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.BluePhoneInfo_Call_Number">
+            <summary>
+            BluePhoneInfo_Call_Number
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.BluePhoneInfo_Battery_Info">
+            <summary>
+            BluePhoneInfo_Battery_Info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.AudioInfo">
+            <summary>
+            AudioInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.Navigaion_ZoomMapOpt">
+            <summary>
+            Navigaion_ZoomMapOpt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.RadioCtrl">
+            <summary>
+            RadioCtrl
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.RadioFavoritesInfo">
+            <summary>
+            Get RadioFavorites
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.GetAddresslist">
+            <summary>
+            Get GetAddresslist
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.QueryDeviceInfo">
+            <summary>
+             QueryDeviceInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.QueryFileAllInfo">
+            <summary>
+             QueryFileAllInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.QueryFileInfo">
+            <summary>
+             QueryFileInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.OpenMedia(System.String)">
+            <summary>
+             OpenMedia
+            </summary>
+            <param name="name">file name</param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.ResponseOpenResultInfo">
+            <summary>
+             Response OpenResultInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.CloseMedia">
+            <summary>
+             CloseMedia
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.RequestPlayCtrlInfo">
+            <summary>
+             MutiMedia_PlayCtrl
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.LangugeInfo">
+            <summary>
+             LangugeInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.UIInfo">
+            <summary>
+             UIInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.RSECtrlInfo">
+            <summary>
+             RSECtrlInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Controllers.SOMEIPController.RadioFavoriteOpt">
+            <summary>
+             RadioFavoriteOpt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:webapi.Models.eRType.FM">
+            <summary>
+            FM
+            </summary>
+        </member>
+        <member name="F:webapi.Models.eRType.AM">
+            <summary>
+            AM
+            </summary>
+        </member>
+        <member name="T:webapi.Models.RadioChannelInfo">
+            <summary>
+            Radio channel information
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RadioChannelInfo.radioFreqency">
+            <summary>
+            Actual frequency value
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RadioChannelInfo.radioType">
+            <summary>
+            Radio Type, 0x00:Invalid, 0x01: FM, 0x02:AM
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RadioChannelInfo.radioName">
+             <summary>
+             Radio name, The maximum length of the radio name is 100 characters
+            <para>, If the value is not successfully obtained, it is not necessary to fill in the parameter</para>
+             </summary>
+        </member>
+        <member name="T:webapi.Models.SetRadioChannelInfo">
+            <summary>
+            Radio channel information
+            </summary>
+        </member>
+        <member name="P:webapi.Models.SetRadioChannelInfo.ChannelInfo">
+            <summary>
+            Channel information
+            </summary>
+        </member>
+        <member name="T:webapi.Models.NavigationStatusInfo">
+            <summary>
+            Navigation Status information
+            </summary>
+        </member>
+        <member name="P:webapi.Models.NavigationStatusInfo.status">
+            <summary>
+            Navigation Status, 0x00:Invalid, 0x01:Stopped, 0x02:Running
+            </summary>
+        </member>
+        <member name="T:webapi.Models.NavigationMapData">
+            <summary>
+            Navigation Map Data
+            </summary>
+        </member>
+        <member name="P:webapi.Models.NavigationMapData.mapData">
+            <summary>
+            Navigation Map Data, 
+            </summary>
+        </member>
+        <member name="T:webapi.Models.NavigationData">
+            <summary>
+            NavigationData
+            </summary>
+        </member>
+        <member name="P:webapi.Models.NavigationData.unit">
+            <summary>
+            Units used for distance, 0x00:Invalid, 0x01:Kilometre, 0x02:Metre, 0x03:Foot, 0x04:Mile
+            </summary>
+        </member>
+        <member name="P:webapi.Models.NavigationData.zoomLevel">
+            <summary>
+            Map current zoom level, range from 0x00 to 0x15, 0xff is Invalid
+            </summary>
+        </member>
+        <member name="P:webapi.Models.NavigationData.distance">
+            <summary>
+            Distance data
+            </summary>
+        </member>
+        <member name="P:webapi.Models.NavigationData.roadName">
+             <summary>
+             Road name, The maximum length of the road name is 100 characters
+            <para>　 </para> 
+             </summary>
+        </member>
+        <member name="T:webapi.Models.CallStateInfo">
+            <summary>
+            BluePhoneInfo_Call_State
+            </summary>
+        </member>
+        <member name="P:webapi.Models.CallStateInfo.status">
+             <summary>
+             mobile phone Call status
+            <para>[0x00: Standby status, </para> 
+            <para>0x01: During call, </para>
+            <para>0x02: Outgoing call, </para>
+            <para>0x03: Failure of outgoing call, </para>
+            <para>0x04: During call waiting, </para>
+            <para>0x05: Incoming with Hold, </para>
+            <para>0x06: On Hold]</para>
+             </summary>
+        </member>
+        <member name="T:webapi.Models.CallNumberInfo">
+            <summary>
+            BluePhoneInfo_Call_Number
+            </summary>
+        </member>
+        <member name="P:webapi.Models.CallNumberInfo.CallAddress">
+            <summary>
+            Address info, 
+            </summary>
+        </member>
+        <member name="T:webapi.Models.BatteryInfo">
+            <summary>
+            BluePhoneInfo_Call_Number
+            </summary>
+        </member>
+        <member name="P:webapi.Models.BatteryInfo.batteryAllowance">
+             <summary>
+            <para> The remaining battery power is expressed as a percentage, </para>
+            <para>range from 0x00(0) to 0x64(100), 0xff is Invalid</para>
+             </summary>
+        </member>
+        <member name="T:webapi.Models.AudioInfo">
+            <summary>
+            AudioInfo
+            </summary>
+        </member>
+        <member name="P:webapi.Models.AudioInfo.title">
+             <summary>
+            <para> title info, </para>
+            <para>The maximum length of the title is 100 characters</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.AudioInfo.artist">
+             <summary>
+            <para> artist text, </para>
+            <para>The maximum length of the artist text is 100 characters</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.AudioInfo.album">
+             <summary>
+            <para> album text, </para>
+            <para>The maximum length of the album text is 100 characters</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.AudioInfo.comment">
+             <summary>
+            <para> comment text, </para>
+            <para>The maximum length of the comment text is 100 characters</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.AudioInfo.file">
+             <summary>
+            <para> file text, </para>
+            <para>The maximum length of the file text is 100 characters</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.AudioInfo.lyrics">
+             <summary>
+            <para> lyrics text, </para>
+            <para>The maximum length of the lyrics text is 500 characters</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.NavigaionZoomMapOpt.zoomLevel">
+            <summary>
+            Map current zoom level, range from 0x00 to 0x15, 0xff is Invalid
+            </summary>
+        </member>
+        <member name="P:webapi.Models.NavigaionZoomMapOpt.centerPoint_x">
+            <summary>
+            Central point X axis coordinate value
+            </summary>
+        </member>
+        <member name="P:webapi.Models.NavigaionZoomMapOpt.centerPoint_y">
+            <summary>
+            Central point y axis coordinate value
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RadioCtrl.ctrlMode">
+            <summary>
+            Radio control mode, 0x00: Invalid, 0x01: Off, 0x02: On
+            </summary>
+        </member>
+        <member name="T:webapi.Models.RadioFavoritesInfo">
+            To get a list of favorite channels///
+        </member>
+        <member name="P:webapi.Models.RadioFavoritesInfo.FavoritesList">
+            <summary>
+            Favorite information list 
+            </summary>
+        </member>
+        <member name="T:webapi.Models.RadioFavoriteOpt">
+            <summary>
+            Used to add channels to a favorite list or to remove a specific channel from a favorite list
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RadioFavoriteOpt.mode">
+            <summary>
+             Operation  mode, 0x00:Invalid, 0x01:Add to Favorites list, 0x02:Delete from Favorites list, 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RadioFavoriteOpt.RadioChannelInfo">
+            <summary>
+             Radio channel information 
+            </summary>
+        </member>
+        <member name="T:webapi.Models.AddressInfo">
+            <summary>
+            Address Info,  
+            </summary>
+        </member>
+        <member name="P:webapi.Models.AddressInfo.name">
+             <summary>
+             name text,  
+            <para>The maximum length of the name text is 32 characters, </para>
+            <para>When there is no valid name, do not fill in</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.AddressInfo.number">
+             <summary>
+             number text,  
+            <para>The maximum length of the number text is 20 characters</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.AllAddressInfo.AddressList">
+            <summary>
+            Address list
+            </summary>
+        </member>
+        <member name="T:webapi.Models.DeviceInfo">
+            <summary>
+            Device Info
+            </summary>
+        </member>
+        <member name="P:webapi.Models.DeviceInfo.name">
+             <summary>
+             Device Name
+            <para>The maximum length of the Device Name is 20 characters</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.DeviceInfo.description">
+             <summary>
+             Device description info, 
+            <para>The maximum length of the description info is 64 characters</para>
+             </summary>
+        </member>
+        <member name="T:webapi.Models.AllDeviceInfo">
+            <summary>
+            Query Device Info 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.AllDeviceInfo.DeviceList">
+            <summary>
+            Device list 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.FileInfo.name">
+            <summary>
+            file name, 
+            The maximum length of the name is 64 characters
+            </summary>
+        </member>
+        <member name="P:webapi.Models.FileInfo.fileType">
+             <summary>
+             file type, 
+            <para>0x00:FILE, 0x01:DIRECTORY</para>
+             </summary>
+        </member>
+        <member name="P:webapi.Models.AllFileInfo.fileInfoList">
+            <summary>
+            file info list, 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.OpenFileRequestInfo.fileInfo">
+            <summary>
+            file info, 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.OpenFileResultInfo.mediaId">
+            <summary>
+            Unique identifier for opening file, 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.CloseMedia.file">
+            <summary>
+            File result information requested for operation, 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RequestPlayCtrlInfo.mode">
+            <summary>
+            contrl mode , 
+            <para>0x00:InActivated, 0x01:Pause, 0x02:Resume, 0x03:progress control, 0x04:Stop </para>
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RequestPlayCtrlInfo.processVal">
+            <summary>
+            process val, Valid only at mode= 0x03:progress control, 
+            <para>range from 0(0x0) to 100(0x64): Percentage value of Playback progress</para>
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RequestPlayCtrlInfo.file">
+            <summary>
+            file info, 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.LangugeInfo.LangugeId">
+            <summary>
+            identifier for Languge, 0x0:English, 0x1:Chinese 
+            </summary>
+        </member>
+        <member name="P:webapi.Models.UIInfo.UIId">
+            <summary>
+            identifier for UI, 0x0:UI1, 0x1:UI2
+            </summary>
+        </member>
+        <member name="P:webapi.Models.RSECtrlInfo.VoiceOutputCtrl">
+            <summary>
+            RSE Voice Output Ctrl, 0x0:InActivated, 0x1:Normal, 0x02:Mute 
+            </summary>
+        </member>
+    </members>
+</doc>

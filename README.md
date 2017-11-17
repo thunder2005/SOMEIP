@@ -12,3 +12,9 @@ dofile(DATA_DIR.."vsomeip.lua")
 
 ### 运行效果截图
  ![运行效果截图](./img/demo1.PNG)
+
+
+ ## webapi
+使用asp.net core 来定义SOMEIP相关的webapi,同时使用swagger自动生成接口文档，接口使用假设的系统，这里并不是真正意义上的webapi,只是在借用webapi的概念来实现适合自己的接口,旨在关心Model和Example Value两部分.
+![运行效果截图](./img/webapi_swagger.PNG)
+
